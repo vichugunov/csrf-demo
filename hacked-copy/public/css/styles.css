@@ -1,0 +1,29 @@
+html,
+body {
+  height: 100%;
+}
+
+main {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  position: relative;
+}
+
+main img {
+  background: url(https://download.hipwallpaper.com/desktop/1600/900/39/16/k7Pf0v.jpg);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+}
+
+
+footer {
+  border-top: 1px solid lightgray;
+}
