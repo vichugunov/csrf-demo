@@ -14,7 +14,7 @@ main {
 }
 
 main img {
-  background: url(https://download.hipwallpaper.com/desktop/1600/900/39/16/k7Pf0v.jpg);
+  background: url(../assets/img/skulls.png) no-repeat left;
   position: absolute;
   left: 0;
   top: 0;
