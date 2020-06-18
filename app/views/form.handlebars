@@ -1,0 +1,35 @@
+<h3 class="text-center text-secondary mb-0 mt-4">Welcome back</h3>
+<h3 class="text-center text-primary mb-0 mt-1">{{who}}</h3>
+<main role="main" class="flex-grow-1">
+  <div class="container">
+    <!-- Contact Section Heading-->
+    <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Send money</h2>
+    <!-- Icon Divider-->
+    <div class="divider-custom">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+        <div class="divider-custom-line"></div>
+    </div>
+    <!-- Contact Section Form-->
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <form action="/send" method="post" target="_self" enctype="multipart/form-data">
+          <input type="hidden" name="_csrf" value={{csrfToken}}>
+          <div class="control-group">
+            <div class="form-group floating-label-form-group controls mb-0 pb-2">
+              <label>To</label><input name="recepient" class="form-control" type="email" placeholder="Email Address" required="required" data-validation-required-message="Please enter your email address." />
+              <p class="help-block text-danger"></p>
+            </div>
+            <div class="form-group floating-label-form-group controls mb-0 pb-2">
+              <label>Amount &euro;</label><input name="amount" class="form-control" type="number" min="0.00" max="10000.00" step="0.01" placeholder="0.00" required="required" data-validation-required-message="Please enter valid amount from 0 to 10000.00"/>
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <br />
+          <div id="success"></div>
+          <div class="form-group"><button class="btn btn-primary btn-xl" id="sendMessageButton" type="submit">Send</button></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</main>

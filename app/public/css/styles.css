@@ -20,6 +20,7 @@ main {
 
 .response {
   align-items: flex-start;
+  flex-direction: column;
   font-family: 'Courier New', Courier, monospace;
   padding-left: 40px;
   padding-right: 40px;
