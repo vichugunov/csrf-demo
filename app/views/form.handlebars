@@ -14,6 +14,7 @@
     <div class="row">
       <div class="col-lg-8 mx-auto">
         <form action="/send" method="post" target="_self" enctype="multipart/form-data">
+          <input type="hidden" name="_csrf" value={{csrfToken}}>
           <div class="control-group">
             <div class="form-group floating-label-form-group controls mb-0 pb-2">
               <label>To</label><input name="recepient" class="form-control" type="email" placeholder="Email Address" required="required" data-validation-required-message="Please enter your email address." />
